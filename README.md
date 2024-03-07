@@ -1,1 +1,0 @@
-# kmg_regis_msde_practicum_1
