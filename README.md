@@ -6,6 +6,8 @@ My goal is to create a process by which reviews can be analyzed en masse, in ord
 
 ## Why Video Games?
 The video game industry has been steadily increasing in popularity for years. Modern games are usually delivered on digital platforms, meaning there is no physical disc or cartridge anymore. The digital delivery method means that developers can release patches, bug fixes, content updates, etc. to consumers after they have already purchased the game. 
+
+
  
 This ease of delivery has created a de facto ongoing contract between game developer and game consumer. Consumers expect developers to fix their bugs, update their games, and even publish new content for that game, after they have given the developer money for that game. 
 
@@ -33,6 +35,8 @@ It is possible to connect Tableau directly to the data in MongoDB through an Atl
 
 The pipeline will work on any game with a Steam identifier number, or “game app ID”. This can be found in the URL of the game’s Steam webpage. See screenshot below for an example.
 
+![url_screenshot](https://github.com/kmg-regis/kmg_regis_msde_practicum_1/blob/main/images/url_screenshot.png)
+
  ## Limitations
 Steam throttles its call rates, meaning that it takes some time to pull large amounts of reviews. It took me about 10-15 minutes per batch of 1000 to do the extraction.
 
@@ -41,15 +45,15 @@ The standard access level also limits users to data from the past year.
 ## Dataset
 In order to demonstrate the pipeline and dashboard, I chose the following three games:
 
- 
+![stardew_image](https://github.com/kmg-regis/kmg_regis_msde_practicum_1/blob/main/images/stardew_image.png)
 Stardew Valley is an indie game that was released in 2016. It is considered highly beloved, and serves as a control case for a game that has long-term popularity. The developer still occasionally releases free content and patches, even 8 years after release. 
 
- 
+![cyberpunk_image](https://github.com/kmg-regis/kmg_regis_msde_practicum_1/blob/main/images/cyberpunk_image.png)
 Cyberpunk 2077 is a game from a major developer (CD Projekt Red). Its original release in 2020 was considered catastrophic: the game was highly hyped in the media, but upon release players found it buggy, unfinished, and boring. 
 
 Over the last 3 years the studio has continued working on the game, taking in feedback from reviews and releasing patches and fixes. It is now highly popular and considered a very good game. 
 
- 
+![starfield_image](https://github.com/kmg-regis/kmg_regis_msde_practicum_1/blob/main/images/starfield_image.png)
 Starfield is another big-name game, released by Bethesda last fall. The game was teased and hyped to fans in excess for years, but since release it has not lived up to the expectations. Fans think the game is boring and disappointing. 
 
 The developer began replying to critical reviews on Steam, and the reviews with replies drew massive attention and fan engagement. However, the responses themselves were argumentative about fan reactions, rather than accepting of the feedback. A similar issue happened in December, when a studio director made a defensive post on Twitter that went viral. 
